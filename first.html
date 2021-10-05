@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DIABETEC PREDICTION</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h2 class='container-heading' ><span class="heading_font">DIABETECS PREDICTION</span>
+            
+        </h2>
+    </div>
+    
+    <div class="ml-container">
+        
+        <form action="{{ url_for ('home') }}" method="POST">
+            <br>
+            <h3>PREGNANCIES</h3>
+            <input id="first" name="PREGNANCIES" placeholder="NUMBER" required="required">
+            <br>
+            <h3>GLUCOSE</h3>
+            <input id="second" name="GLUCOSE" placeholder="GLUCOSE LEVEL" required="required">
+            <br>
+            <h3>BLOODPRESSURE</h3>
+            <input id="third" name="BLOODPRESSURE" placeholder="WRITE APPROPRIATE VALUE" required="required">
+            <br>
+            <h3>SKINTHICKNESS</h3>
+            <input id="fourth" name="SKINTHICKNESS" placeholder="CORRECT VALUE" required="required">
+            <br>
+            <h3>INSULIN</h3>
+            <input id="fifth" name="INSULIN" placeholder="INSULIN" required="required">
+            <br>
+            <h3>DIABETES</h3>
+            <input id="fifth" name="DIABETES" placeholder="MEASURMENT" required="required">
+            <br>
+            <h3>AGE</h3>
+            <input id="fifth" name="AGE" placeholder="RANGE BETWEEN 20 TO 100" required="required">
+            <br>
+            <br>
+            <br>
+            <button id="sub" type="submit ">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class='footer-description'>@SOUMYA RANJAN SWAIN</p>
+
+        </form>
+    </div>
+    
+
+</body>
+</html>

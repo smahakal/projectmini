@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast cancer Result</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="{{url_for('predict')}}" method="POST">
+            <h2 class='container-heading'><span class="heading_font">DIABETIC Prediction</span>
+            </h2>
+        <br><br><br>
+            <div class="results">
+                {% if prediction==1 %}
+				    <h1><span class='danger'>Oops! <br><br>You have diabetics.</span></h1>
+                {% elif prediction==0 %}
+				    <h1><span class='safe'>Congratulation!<br><br>You DON'T have diabetics.</span></h1>
+			    {% endif %}
+            </div>
+		
+        </form>
+
+    </div>
+    <div>
+            <br><br> <br><br><br><br><br><br><br><br>
+
+            <p class='footer-description'>©SOUMYA RANJAN SWAIN</p>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
