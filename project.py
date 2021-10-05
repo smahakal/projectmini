@@ -7,7 +7,7 @@ import seaborn as sn
 import warnings
 warnings.filterwarnings("ignore")
 
-data=pd.read_csv("Diabetes_data.csv")
+data=pd.read_csv("diabetics-prediction-main/Diabetes_data.csv")
 
 data.head()
 
